@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ce12d4bc-edf4-4329-8392-0d0ceed99ac0</UserSecretsId>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AirbnbClone.Api</RootNamespace>
+    <PackageId>AirbnbClone.Api</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AirbnbClone.Contracts\AirbnbClone.Contracts.csproj" />
+    <ProjectReference Include="..\AirbnbClone.Application\AirbnbClone.Application.csproj" />
+    <ProjectReference Include="..\AirbnbClone.Infrastructure\AirbnbClone.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
